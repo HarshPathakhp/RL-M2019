@@ -1,7 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 class Testbed:
-    def __init__(self, real_reward = 0, time_mean = 0, time_variance = 0.01, steps = int(1e4), init_estimates = 0,
+    def __init__(self, real_reward = 1, time_mean = 0, time_variance = 0.01, steps = int(1e4), init_estimates = 0,
                 eps = 0.1, alpha = 0.1, use_alpha = True, use_ucb = False, ucb_param = 2):
         
         self.num_bandits = 10
