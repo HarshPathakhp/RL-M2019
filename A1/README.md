@@ -18,3 +18,6 @@ In the stationary case, ucb gives higher expected reward than the rest. UCB perf
 On the other hand, optimistic initial values fares better than e-greedy, since each bandit is going to get tried for some time initially and we will get better estimates than e-greedy. However, since this method only explores towards the beginning of time, it fares slightly worse than ucb.
 ![Alt text](./ucb_non-stationary.png?raw=true "UCB")
 We know that ucb and optimistic initial values are not suitable for non-stationary environment. This is because both methods have been designed considering that the environment is stationary. Particularly, in UCB, the variance term will go down with increasing time steps, given that all bandits have been selected for large amount of times. Hence it's need for exploration will go down too and the method will become near-greedy. We already know that for optimistic initial values, its drive for exploration persists only in the beginning.
+
+# Ex2.7
+![Alt text](./rl_a1_q3.pdf?raw=true "UCB")
